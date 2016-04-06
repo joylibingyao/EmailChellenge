@@ -85,9 +85,9 @@ public class FindingEmailChallenge {
         linkDb = new LinksDb();
         
         ArrayList<String> emails = new ArrayList<String>();
-        // findEmail(emails,args[0]);
+        findEmail(emails,args[0]);
 //        static 
-       findEmail(emails,"jana.com/contact");
+       // findEmail(emails,"jana.com/contact");
         linkDb.printDb();
         System.out.print(emails);
     }
