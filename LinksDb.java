@@ -1,9 +1,4 @@
 import java.util.ArrayList;
-
-/**
- *
- * @author bingyaoli
- */
 public class LinksDb {
     private ArrayList<String> linksDb;
 
@@ -27,9 +22,12 @@ public class LinksDb {
     }
     
     public void printDb(){
-        System.out.println("Link in DB: "+linksDb);
+        System.out.println("All links in DB"+linksDb);
     }
     public void addToDb(String url){
-        this.linksDb.add(url);
+        if(this.isInPool(url)==false){
+            this.linksDb.add(url);
+        }
+        
     }
 }
