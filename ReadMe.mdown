@@ -1,0 +1,11 @@
+Goal:Create a command line program that will take an internet domain name (i.e. “jana.com”) and print out a list of the email addresses that were found on that website only.
+
+Language:Java
+Libraries: Jsoup, selenium,
+
+1.Used Jsoup Java Html Parser to get all href links and emails.
+2.Used Selenuium WebDrivers to simulate button clicks behavior to get url that are not shown in front end. 
+
+Result:
+mit.edu:able to get all emails
+jana.com:able to get all hidden urls but cannot parse emails(have no idea why)
